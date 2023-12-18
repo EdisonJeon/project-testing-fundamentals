@@ -37,7 +37,10 @@ test("renders THREE error messages if user enters no values into any fields.", a
   });
 });
 
-test("renders ONE error message if user enters a valid first name and last name but no email.", async () => {});
+test("renders ONE error message if user enters a valid first name and last name but no email.", async () => {
+    render(<ContactForm />);
+    
+});
 
 test('renders "email must be a valid email address" if an invalid email is entered', async () => {});
 
